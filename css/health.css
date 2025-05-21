@@ -1,0 +1,416 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+}
+
+/* Health Services */
+.health-services {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.facilities-tabs {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-light);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--secondary-color);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
+.tab-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tab-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.tab-text ul.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.tab-text ul.benefits-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+}
+
+.tab-text ul.benefits-list li i {
+    color: var(--secondary-color);
+}
+
+.tab-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.tab-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.facilities-tabs {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-light);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--secondary-color);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.facility-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.facility-image {
+    height: 200px;
+}
+
+.facility-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.facility-info {
+    padding: 20px;
+}
+
+.facility-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.facility-info p {
+    margin: 8px 0;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+}
+
+.facility-info p i {
+    margin-left: 5px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+
+.owl-prev,
+.owl-next {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    margin-left: 10px !important;
+    transition: all 0.3s ease;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: var(--primary-color) !important;
+}
+
+/* Health Centers */
+.health-centers {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.centers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.center-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.center-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.center-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.center-card p {
+    margin-bottom: 5px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.center-card p i {
+    margin-left: 5px;
+}
+
+/* Emergency Section */
+.emergency-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.emergency-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.emergency-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.emergency-content p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.emergency-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.emergency-item {
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.emergency-icon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.emergency-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.emergency-info p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    direction: ltr;
+}
+
+/* Health Tips */
+.health-tips {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.tip-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tip-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tip-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.tip-content p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.read-more {
+    color: var(--secondary-color);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.read-more i {
+    font-size: 0.8rem;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover i {
+    transform: translateX(-5px);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .tab-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
