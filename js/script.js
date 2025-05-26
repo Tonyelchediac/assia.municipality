@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { url: "SportsActivities.html", text: "رياضة ونشاطاتها" },
     { url: "environmentCleanliness.html", text: "نظافة البيئة" },
     { url: "contact.html", text: "تواصل" },
+    { url: "complaints.html", text: "تقديم شكوى" },
     { url: "#electronic-services", text: "خدمات إلكترونية" },
   ];
 
@@ -33,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     (link) => `<li><a href="${link.url}">${link.text}</a></li>`
                   )
                   .join("")}    
-                <li><div class="gtranslate_wrapper"></div></li>
             </ul>
 
             <div class="hamburger" id="hamburger">
@@ -43,19 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     <div id="overlay"></div>
 `;
-
-  window.gtranslateSettings = {
-    default_language: "ar",
-    native_language_names: true,
-    detect_browser_language: true,
-    languages: ["ar", "fr", "en"],
-    wrapper_selector: ".gtranslate_wrapper",
-  };
-
-  const script = document.createElement("script");
-  script.src = "https://cdn.gtranslate.net/widgets/latest/lc.js ";
-  script.defer = true;
-  document.body.appendChild(script);
 
   footer.innerHTML = ` 
           <div class="container">
