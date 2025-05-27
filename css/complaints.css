@@ -423,12 +423,6 @@ textarea {
         margin-bottom: 30px;
     }
     
-    .complaint-stats {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
     .form-row {
         flex-direction: column;
         gap: 0;
@@ -441,12 +435,9 @@ textarea {
     .types-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-}
 
-@media (max-width: 576px) {
     .complaint-stats {
-        flex-direction: column;
-        gap: 20px;
+        flex-wrap: wrap;
     }
     
     .status-step {
